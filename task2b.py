@@ -24,10 +24,10 @@ for i in range(s):
     for j in range(s):
         print('Теперь ход SkyNet... ')
         time.sleep(1)
-        if i == k//29:
+        if i == k%29:
             print('Похоже, все конфеты твои, человек!')
             sys.exit()
-        j = k//29
+        j = k%29
         print(j)
         s -= j
         print(f'Осталось {s} конфет')
